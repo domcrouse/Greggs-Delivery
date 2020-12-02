@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    Scene highscoreScene;
+
     TimerController timerController;
     public Text scoreDisplayText;
 
@@ -66,4 +69,6 @@ public class GameController : MonoBehaviour
 
         Highscores.AddNewHighscore("Kin", endScore);
     }
+
+    //public static void 
 }

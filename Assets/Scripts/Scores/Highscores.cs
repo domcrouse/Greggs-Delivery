@@ -15,7 +15,7 @@ public class Highscores : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        highscoresDisplay = GetComponent<DisplayHighscores>();
+
     }
 
     public static void AddNewHighscore(string username, int score)
@@ -31,7 +31,6 @@ public class Highscores : MonoBehaviour
         if (string.IsNullOrEmpty(www.error))
         {
             print("Upload successful.");
-            DownloadHighscores();
         }
         else
         {
@@ -52,7 +51,7 @@ public class Highscores : MonoBehaviour
         if (string.IsNullOrEmpty(www.error))
         {
             FormatHighscores(www.text);
-
+            highscoresDisplay = GameObject.FindGameObjectWithTag("HighscoreDisplay").GetComponent<DisplayHighscores>();
             highscoresDisplay.OnHighscoresDownloaded(highscoresList);
         }
         else

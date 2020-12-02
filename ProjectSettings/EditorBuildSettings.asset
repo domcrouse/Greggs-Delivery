@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/James Test Car.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ScoreSystem.unity
+    guid: 270c5f21a6a9c8f47b790c72e873b898
+  - enabled: 1
+    path: Assets/Scenes/HighscoreDisplay.unity
+    guid: c002e41f6cc79244d919b1ac5513df24
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 44824842156e3f5459dc063142b4ef89,
       type: 2}

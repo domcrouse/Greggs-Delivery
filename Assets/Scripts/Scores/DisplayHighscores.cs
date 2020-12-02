@@ -15,9 +15,9 @@ public class DisplayHighscores : MonoBehaviour
             highscoreText[i].text = i + 1 + ". Fetching...";
         }
 
-        highscoreManager = GetComponent<Highscores>();
+        highscoreManager = GameObject.FindGameObjectWithTag("HighscoreController").GetComponent<Highscores>();
 
-        StartCoroutine("RefreshHighscores");
+        //StartCoroutine("RefreshHighscores");
     }
 
     public void OnHighscoresDownloaded(Highscores.Highscore[] highscoreList)
