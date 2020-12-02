@@ -29,6 +29,10 @@ public class GameController : MonoBehaviour
         {
             AddScore(10);
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            timerController.AddBonusTime(5);
+        }
     }
 
     public void AddScore(int points)
