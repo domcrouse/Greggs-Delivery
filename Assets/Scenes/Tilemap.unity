@@ -132,9 +132,10 @@ GameObject:
   - component: {fileID: 12052989}
   - component: {fileID: 12052991}
   - component: {fileID: 12052990}
+  - component: {fileID: 12052992}
   m_Layer: 0
   m_Name: Tilemap_Buildings
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -943,6 +944,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &12052992
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12052988}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &64230956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,9 +1054,10 @@ GameObject:
   - component: {fileID: 840684767}
   - component: {fileID: 840684769}
   - component: {fileID: 840684768}
+  - component: {fileID: 840684770}
   m_Layer: 0
   m_Name: Tilemap_Road
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5487,6 +5505,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &840684770
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840684766}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1070434250
 GameObject:
   m_ObjectHideFlags: 0
@@ -5498,9 +5532,10 @@ GameObject:
   - component: {fileID: 1070434251}
   - component: {fileID: 1070434253}
   - component: {fileID: 1070434252}
+  - component: {fileID: 1070434254}
   m_Layer: 0
   m_Name: Tilemap_Pavement
-  m_TagString: Untagged
+  m_TagString: Pavement
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34323,6 +34358,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1070434254
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070434250}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1097110871
 GameObject:
   m_ObjectHideFlags: 0
@@ -34382,9 +34433,10 @@ GameObject:
   - component: {fileID: 1661363107}
   - component: {fileID: 1661363109}
   - component: {fileID: 1661363108}
+  - component: {fileID: 1661363110}
   m_Layer: 0
   m_Name: Tilemap_MapBarrier
-  m_TagString: Untagged
+  m_TagString: Barrier
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36744,6 +36796,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1661363110
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661363106}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &2023152748
 GameObject:
   m_ObjectHideFlags: 0
@@ -36755,9 +36823,10 @@ GameObject:
   - component: {fileID: 2023152749}
   - component: {fileID: 2023152751}
   - component: {fileID: 2023152750}
+  - component: {fileID: 2023152752}
   m_Layer: 0
   m_Name: Tilemap_Misc
-  m_TagString: Untagged
+  m_TagString: Misc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37598,3 +37667,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &2023152752
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023152748}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
