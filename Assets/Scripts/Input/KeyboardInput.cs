@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyboardMobileInput : InputBase, IInput
+public class KeyboardInput : InputBase, IInput
 {
+    [SerializeField]
+    GameObject touchControls;
+
+    void Start(){
+        touchControls.SetActive(false);
+    }
+
     public float GetAcceleration()
     {
         return input.Default.Action.ReadValue<float>();

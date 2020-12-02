@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputBase : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class InputBase : MonoBehaviour
     void Awake()
     {
         input = new DefaultInput();
+        if(Accelerometer.current != null)
+            InputSystem.EnableDevice(Accelerometer.current);
     }
 
     void OnEnable()
