@@ -5,18 +5,24 @@ using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour
 {
-    private int initialTimer = 3;
+    private int initialTimer = 5;
     public int currentTimer;
     public Text timerDisplayText;
 
+    Coroutine runningTimer = null;
+
     void Start()
     {
-        StartCoroutine(Countdown());
+        runningTimer = StartCoroutine(Countdown());
     }
 
     void Update()
     {
-        
+        //Debug button
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            StopCoroutine(runningTimer);
+        }
     }
 
     IEnumerator Countdown()
@@ -30,5 +36,7 @@ public class TimerController : MonoBehaviour
             currentTimer--;
             timerDisplayText.text = "Time remaining: " + currentTimer + " seconds";
         }
+
+        Debug.Log("Timer has ended.");
     }
 }
