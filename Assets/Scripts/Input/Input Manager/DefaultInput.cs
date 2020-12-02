@@ -103,6 +103,39 @@ public class @DefaultInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""19515189-6584-426e-98ca-97d05c091b4e"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Horizontal"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""80bd2125-a17d-4acf-a559-272219054748"",
+                    ""path"": ""<Accelerometer>/acceleration/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Horizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""7e18f727-8863-4288-9ce6-69769c6a2288"",
+                    ""path"": ""<Accelerometer>/acceleration/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Horizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": ""WASD"",
                     ""id"": ""41ee54ad-dcf2-407e-a9cc-0998b972077e"",
                     ""path"": ""1DAxis"",

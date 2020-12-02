@@ -25,6 +25,16 @@ public class TimerController : MonoBehaviour
 
     }
 
+    public void AddBonusTime(int bonusTime)
+    {
+        if (!gameController.GameHasEnded)
+        {
+            currentTimer += bonusTime;
+
+            timerDisplayText.text = "Time remaining: " + currentTimer + " seconds";
+        }
+    }
+
     public void StopTimer()
     {
         StopCoroutine(runningTimer);

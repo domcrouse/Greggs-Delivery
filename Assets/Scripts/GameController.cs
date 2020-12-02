@@ -29,6 +29,10 @@ public class GameController : MonoBehaviour
         {
             AddScore(10);
         }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            timerController.AddBonusTime(5);
+        }
     }
 
     public void AddScore(int points)
@@ -59,5 +63,7 @@ public class GameController : MonoBehaviour
         scoreDisplayText.text = "You have achieved a score of: " + endScore;
 
         GameHasEnded = true;
+
+        Highscores.AddNewHighscore("Kin", endScore);
     }
 }
