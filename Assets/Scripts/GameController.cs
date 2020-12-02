@@ -63,5 +63,7 @@ public class GameController : MonoBehaviour
         scoreDisplayText.text = "You have achieved a score of: " + endScore;
 
         GameHasEnded = true;
+
+        Highscores.AddNewHighscore("Kin", endScore);
     }
 }
