@@ -9,11 +9,13 @@ public class GameController : MonoBehaviour
     public Text scoreDisplayText;
 
     private int currentScore = 0;
-    public int endScore;
+    public int endScore = -1;
+    public bool GameHasEnded = false;
 
     void Start()
     {
         timerController = GetComponent<TimerController>();
+        scoreDisplayText.text = "Score: " + currentScore;
     }
 
     void Update()
@@ -31,8 +33,11 @@ public class GameController : MonoBehaviour
 
     public void AddScore(int points)
     {
-        currentScore += points;
-        scoreDisplayText.text = "Score: " + currentScore;
+        if (!GameHasEnded)
+        {
+            currentScore += points;
+            scoreDisplayText.text = "Score: " + currentScore;
+        }
     }
 
     //Amount of points gained from remaining timer
@@ -44,10 +49,15 @@ public class GameController : MonoBehaviour
     }
 
     //When player completes objective
-    void EndTheGame()
+    public void EndTheGame()
     {
         timerController.StopTimer();
 
         AddScore(TimerBonusPoints(timerController.endTimer));
+
+        endScore = currentScore;
+        scoreDisplayText.text = "You have achieved a score of: " + endScore;
+
+        GameHasEnded = true;
     }
 }

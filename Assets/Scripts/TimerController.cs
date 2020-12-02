@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TimerController : MonoBehaviour
 {
     public Text timerDisplayText;
+    GameController gameController;
     Coroutine runningTimer = null;
 
     private int initialTimer = 5;
@@ -14,6 +15,8 @@ public class TimerController : MonoBehaviour
 
     void Start()
     {
+        gameController = GetComponent<GameController>();
+
         runningTimer = StartCoroutine(Countdown());
     }
 
@@ -42,5 +45,6 @@ public class TimerController : MonoBehaviour
         }
 
         Debug.Log("Timer has ran out.");
+        gameController.EndTheGame();
     }
 }
