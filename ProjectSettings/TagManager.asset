@@ -9,6 +9,8 @@ TagManager:
   - Misc
   - Pavement
   - Barrier
+  - HighscoreController
+  - HighscoreDisplay
   layers:
   - Default
   - TransparentFX
