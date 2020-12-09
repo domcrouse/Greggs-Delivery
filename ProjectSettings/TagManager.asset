@@ -11,6 +11,7 @@ TagManager:
   - Barrier
   - HighscoreController
   - HighscoreDisplay
+  - Terrain
   layers:
   - Default
   - TransparentFX
