@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class CarTerrain : MonoBehaviour
 {
-    public TerrainSpeed CurrentTerrain;
+    public TerrainSpeed currentTerrain;
 
     public float SpeedMultiplier(){
-        if(CurrentTerrain != null){
-            return CurrentTerrain.speedMultiplier;
+        if(currentTerrain != null){
+            return currentTerrain.speedMultiplier;
         }
         else{
             return 1.0f;
@@ -17,15 +17,15 @@ public class CarTerrain : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
         if(col.tag == "Terrain"){
-            CurrentTerrain = col.GetComponent<TerrainSpeed>();
+            currentTerrain = col.GetComponent<TerrainSpeed>();
         }
     }
 
     // Checks if the car has stopped touching a terrain
     void OnTriggerExit2D(Collider2D col){
         if(col.tag == "Terrain" && 
-            CurrentTerrain != null && CurrentTerrain.gameObject == col.gameObject){
-            CurrentTerrain = null;
+            currentTerrain != null && currentTerrain.gameObject == col.gameObject){
+            currentTerrain = null;
         }
     }
 }
