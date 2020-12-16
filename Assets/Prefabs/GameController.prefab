@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2795217170249992360}
   - component: {fileID: 2795217170249992361}
   - component: {fileID: 2795217170249992362}
+  - component: {fileID: 5892535003633668417}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -61,3 +62,15 @@ MonoBehaviour:
   scoreDisplayText: {fileID: 0}
   endScore: 0
   GameHasEnded: 0
+--- !u!114 &5892535003633668417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2795217170249992375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81054c95816c05244809c26118538122, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

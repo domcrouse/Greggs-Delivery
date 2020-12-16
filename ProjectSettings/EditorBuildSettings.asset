@@ -6,14 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f71e6a3ffd291844282cc1a97ea10c0d
+  - enabled: 0
     path: Assets/Scenes/James Test Car.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScoreSystem.unity
     guid: 270c5f21a6a9c8f47b790c72e873b898
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HighscoreDisplay.unity
     guid: c002e41f6cc79244d919b1ac5513df24
+  - enabled: 1
+    path: Assets/Scenes/Level_1.unity
+    guid: 51aa111a94363834b8a0dfd54c9749e6
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: c00e7719e843923488ddaef782ac9618
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 44824842156e3f5459dc063142b4ef89,
       type: 2}
