@@ -18,7 +18,8 @@ public class GameController : MonoBehaviour
     void Start()
     {
         timerController = GetComponent<TimerController>();
-        scoreDisplayText.text = "Score: " + currentScore;
+        if(scoreDisplayText != null)
+            scoreDisplayText.text = "Score: " + currentScore;
     }
 
     void Update()

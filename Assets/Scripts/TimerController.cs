@@ -48,13 +48,15 @@ public class TimerController : MonoBehaviour
     IEnumerator Countdown()
     {
         currentTimer = initialTimer;
-        timerDisplayText.text = "You have " + initialTimer + " seconds";
+        if(timerDisplayText != null)
+            timerDisplayText.text = "You have " + initialTimer + " seconds";
 
         while (currentTimer > 0)
         {
             yield return new WaitForSeconds(1);
             currentTimer--;
-            timerDisplayText.text = "Time remaining: " + currentTimer + " seconds";
+            if(timerDisplayText != null)
+                timerDisplayText.text = "Time remaining: " + currentTimer + " seconds";
         }
 
         Debug.Log("Timer has ran out.");

@@ -9,6 +9,7 @@ using System.IO;
 public class SliderData
 {
     public float sliderVal = 1f;
+    public static float currentVolume = 1f;
 
     public static SliderData Load()
     {
@@ -17,7 +18,9 @@ public class SliderData
         if(File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
-            return JsonUtility.FromJson<SliderData>(json);
+            SliderData data = JsonUtility.FromJson<SliderData>(json);
+            currentVolume = data.sliderVal;
+            return data;
         }
         else
         {

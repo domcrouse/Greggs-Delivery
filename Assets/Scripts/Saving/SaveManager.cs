@@ -7,7 +7,7 @@ public class SaveManager : MonoBehaviour
 {
     public Slider slider;
 
-    void Start()
+    void Awake()
     {
         Load();
     }
@@ -15,7 +15,11 @@ public class SaveManager : MonoBehaviour
     public void Load()
     {
         SliderData data = SliderData.Load();
-        slider.value = data.sliderVal;
+        if(slider != null){
+            slider.value = data.sliderVal;
+            SliderData.currentVolume = slider.value;
+        }
+        AudioListener.volume = SliderData.currentVolume;
     }
 
     public void Save()
