@@ -26,6 +26,18 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/OrderCollection.unity
+    guid: 6c05174966c19ab4b98f9ead9c17c857
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 43c90c36730522945876ecb0d76fddb9
+  - enabled: 1
+    path: Assets/Scenes/EndGame2.unity
+    guid: 1d6d534dc971ea542a1e84d9bdfc0012
+  - enabled: 1
+    path: Assets/Scenes/EndGame3.unity
+    guid: d9d538ba329391d4d827f54bf5ae197d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 44824842156e3f5459dc063142b4ef89,
       type: 2}
